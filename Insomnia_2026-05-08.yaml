@@ -14,17 +14,28 @@ collection:
       sortKey: -1778301161020
       description: ""
     children:
-      - url: http://localhost:8080/api/mago/create/{id}
+      - url: http://localhost:8080/api/Magos
         name: Create Mago
         meta:
           id: req_cc06c8356d814f1786415f446810ebd9
           created: 1778300123146
-          modified: 1778301185957
+          modified: 1778303928448
           isPrivate: false
           description: ""
           sortKey: -1778301175947
         method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "xanjura",
+            	"house": "mi casita",
+            	"patronus": "hola",
+            	"isDeatheater": true
+            }
         headers:
+          - name: Content-Type
+            value: application/json
           - name: User-Agent
             value: insomnia/11.2.0
         settings:
@@ -35,12 +46,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/api/mago/findAll/{id}
+      - url: http://localhost:8080/api/Magos
         name: Buscar magos
         meta:
           id: req_3b3cbe3901e249a984f2f5580a1a729d
           created: 1778300512558
-          modified: 1778301184124
+          modified: 1778303747615
           isPrivate: false
           description: ""
           sortKey: -1778301175847
@@ -56,12 +67,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/api/mago/findDeatheaters/{id}
+      - url: http://localhost:8080/api/Magos/deatheaters
         name: Obtener mortifagos
         meta:
           id: req_865b9919c95f47dbba5843ee1f02f49a
           created: 1778300620925
-          modified: 1778301182262
+          modified: 1778303894961
           isPrivate: false
           description: ""
           sortKey: -1778301175747
@@ -77,17 +88,28 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/mago/product/update/{id}
+      - url: "  http://localhost:8080/api/Magos/fee9efd9-6dbf-44f8-871e-8859f96517f7"
         name: Actualizar Mago
         meta:
           id: req_d658f5a5d550416687b5345250b05338
           created: 1778300716484
-          modified: 1778301180541
+          modified: 1778304042446
           isPrivate: false
           description: ""
           sortKey: -1778301175647
         method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {		
+            	"name": "xanjura",
+            		"house": "mi casita",
+            		"patronus": "hola",
+            		"isDeatheater": false
+            	}
         headers:
+          - name: Content-Type
+            value: application/json
           - name: User-Agent
             value: insomnia/11.2.0
         settings:
@@ -98,12 +120,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/api/mago/delete/{id}
+      - url: http://localhost:8080/api/Magos/delete/fee9efd9-6dbf-44f8-871e-8859f96517f7
         name: Eliminar Mago
         meta:
           id: req_2846dc318b4344d19ac6e81bb98089c7
           created: 1778300766662
-          modified: 1778301177918
+          modified: 1778304094583
           isPrivate: false
           description: ""
           sortKey: -1778301175547
@@ -119,12 +141,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/api/mago/findByPatronus/{id}
+      - url: http://localhost:8080/api/Magos/patronus/h
         name: Obtener Patronus
         meta:
           id: req_3ab2633f8de24c35848732096e9938f7
           created: 1778300779019
-          modified: 1778301175494
+          modified: 1778304166068
           isPrivate: false
           description: ""
           sortKey: -1778301175447
